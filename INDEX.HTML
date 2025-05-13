@@ -1,0 +1,87 @@
+<html>
+<body> 
+<h1>USER REGISTRATION </h1>
+<form action="/submit" method="POST" autocomplete="on">
+<form action="/submit" method="POST" target="_blank">
+<label for="firstname"> FIRSTNAME</label>
+<input type="text" name="firstname" placeholder="enter your first name">
+<label for="lastname">
+ LASTNAME </label>
+<input type="lastname" placeholder="enter your last name">
+<div>
+<label for="email"> 
+EMAIL </label>
+<input type="email" placeholder="enter your email">
+<label for="dob">DATE OF BIRTH 
+</label>
+<<input type="date" name="dob" id="dob" min="1900-01-01" max="2020-12-31"
+ placeholder="enter you DOB">
+<br>
+<lable for"favourite colour"> FAVOURITE COLOUR 
+</label>
+<input type="colour" id="favouritecolour" name="favouritecolour" placeholder="your favcolour" ></br>
+<br>
+<lable for="profilepic">UPLOAD PROFILE PIC
+</label>
+<input type="file" name="profile pic" id="profile pic" accept="image/*">
+</br>
+<div>
+<br>
+<input type="radio" name="webLanguage" id="HTML" value="HTML">
+<label for="HTML">HTML</label>
+<input type="radio" name="webLanguage" id="Javascript" value="Javascript">
+<label for="Javascript">JavaScript</label>
+<input type="radio" name="webLanguage" id="CSS" value="CSS">
+<label for="CSS">CSS</label>
+</div>
+</br>
+<br>
+
+<p> VEHICLES YOU OWN </p>
+<input type="checkbox" id="car" name="vehicle" value="car">
+<label for="car"> CAR </label>
+<input type="checkbox" id="bike" name"vehicel" value="bike">
+<label for="bike"> BIKE </label>
+<input type="checkbox" id="schooty" name="vehicle" value="schooty">
+<label for="schooty"> SCHOOTY </label>
+<br><br>
+<label for="car"> CHOOSE YOUR CAR </label>
+<select name="car" id="car">
+<option value="toyota"> TOYOTA </option>
+<option value="honda">HONDA </option>
+<option value="ford">FORD </option>
+</select>
+</br></br>
+<br>
+<label for="availabletime"> AVAILABLE TIME:</label>
+<input type="time" id="availabletime" name="availabletime">
+<br><br>
+<label for="satisfaction"> SATISFACTION LEVEL (0 to 10): </lable>
+<input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="5" oninput="output.value = satisfaction.value">
+<output name="output" id="output">5</output>
+<br><br>
+<label for="countrycode">COUNTRY CODE </lable>
+<input type="text" id="countrycode" name="countrycode" pattern="[A-Z]{3}" required"
+<small> Example: USE , IND , PAK </small>
+</br>
+<br><br>
+<lable for="age"> ENTER YOUR AGE : </lable>
+<input type="number" id="age"  name="age" min="18" max="60" required>
+<input type="month" min="2020-01" max="2025-12">
+<br><br>
+
+<label for="feedback"> FEEDBACK </label></br>
+<textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="enter your feedback">
+</textarea> <br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+<br><br><br>
+<button type="button" onclick="thankyoumessage()" style="background-color: yellow; color: black; border: none; padding: 10px 20px; "> THANK YOU FOR VISITING </button>
+<script>
+function thankyoumessage() {
+alert ("THANK YOU FOR VISITING!);
+}
+</script>
+</body>
+
+</html>
